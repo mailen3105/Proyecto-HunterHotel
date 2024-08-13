@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="House hunter">
+    <meta name="keywords" content="hosteles, viajes, hoteles">
+    <meta name="author" content="Islas - Piccioni - Lignac">
+    <meta name="publisher" content="Islas - Piccioni - Lignac">
+    <title>House Hunter</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        function agregarHabitacion() {
+            const habitacionesDiv = document.getElementById('habitaciones');
+            const nuevaHabitacion = document.createElement('div');
+            nuevaHabitacion.classList.add('habitacion');
+
+            nuevaHabitacion.innerHTML = `
+                <label for="adultos">Adultos:</label>
+                <select name="adultos">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label for="ninos">Niños:</label>
+                <select name="ninos">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            `;
+
+            habitacionesDiv.appendChild(nuevaHabitacion);
+        }
+    </script>
+</head>
+<body>
+    
+    
+    <nav class="menu">
+        <a href="home.html" class="menu">Home</a>
+        <a href="habitaciones.html" class="menu">Habitaciones</a>
+        <a href="actividades.html" class="menu">Actividades</a>
+        <a href="checkin-out.html" class="menu">Check in/out</a>
+        <a href="registro.html" class="menu">Registro de usuarios</a>
+        <a href="contacto.html" class="menu">Contacto</a>
+    </nav>
+    <h1>Habitaciones y Huespedes</h1>
+    <form action="habitaciones2.html" id="formhabitaciones">
+        <div id="habitaciones">
+            <div class="habitacion">
+                <label for="adultos">Adultos:</label>
+                <select name="adultos">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label for="ninos">Niños:</label>
+                <select name="ninos">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+        </div>
+        <button type="button" onclick="agregarHabitacion()">Agregar más habitaciones</button>
+        <br><br>
+        <label for="codigo">Código:</label>
+        <input type="text" id="codigo" name="codigo">
+        <br><br>
+        <button type="submit">Actualizar huéspedes y habitaciones</button>
+    </form>
+    
+    <a href="index.html" class="aHome">Cerrar Sesion</a>
+</body>
+</html>
+
+
+
+    

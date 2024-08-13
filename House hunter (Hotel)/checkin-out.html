@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="House hunter">
+    <meta name="keywords" content="hosteles, viajes, hoteles">
+    <meta name="author" content="Islas - Piccioni - Lignac">
+    <meta name="publisher" content="Islas - Piccioni - Lignac">
+    <title>House Hunter</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <nav class="menu">
+        <a href="home.html" class="menu">Home</a>
+        <a href="habitaciones.html" class="menu">Habitaciones</a>
+        <a href="actividades.html" class="menu">Actividades</a>
+        <a href="checkin-out.html" class="menu">Check in/out</a>
+        <a href="registro.html" class="menu">Registro de usuarios</a>
+        <a href="contacto.html" class="menu">Contacto</a>
+    </nav>
+    <form id="checkForm">
+        <h1>Check-In / Check-Out</h1>
+        <label for="fullname">Nombre completo:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        
+        <label for="dni">DNI:</label>
+        <input type="number" id="dni" name="dni" required>
+        
+        <label for="date">Fecha:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Hora de llegada:</label>
+        <input type="time" id="time" name="time" required>
+        
+        <section>
+            <h3>Actividades incluidas:</h3>
+            <label>
+                <input type="checkbox" name="activities" value="salon"> Salón
+            </label><br>
+            <label>
+                <input type="checkbox" name="activities" value="cancha_paddle"> Cancha de Paddle
+            </label><br>
+            <label>
+                <input type="checkbox" name="activities" value="cancha_futbol"> Cancha de Fútbol
+            </label><br>
+            <label>
+                <input type="checkbox" name="activities" value="pileta"> Pileta
+            </label>
+        </section>
+        
+        <label for="extras">Adicionales:</label>
+        <textarea id="extras" name="extras" rows="4" cols="50"></textarea>
+        
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="checkType" value="checkin" required> Check-In
+            </label>
+            <label>
+                <input type="radio" name="checkType" value="checkout" required> Check-Out
+            </label>
+        </div>
+        
+        <input type="submit" value="Enviar" id="botoncheckin">
+    </form>
+    <a href="index.html" class="aHome">Cerrar Sesion</a>
+</body>
+</html>

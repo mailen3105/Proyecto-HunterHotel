@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="House hunter">
+    <meta name="keywords" content="hosteles, viajes, hoteles">
+    <meta name="author" content="Islas - Piccioni - Lignac">
+    <meta name="publisher" content="Islas - Piccioni - Lignac">
+    <title>House Hunter</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="menu">
+        <a href="home.html" class="menu">Home</a>
+        <a href="habitaciones.html" class="menu">Habitaciones</a>
+        <a href="actividades.html" class="menu">Actividades</a>
+        <a href="checkin-out.html" class="menu">Check in/out</a>
+        <a href="registro.html" class="menu">Registro de usuarios</a>
+        <a href="contacto.html" class="menu">Contacto</a>
+    </nav>
+
+    <h1>HABITACIONES</h1>
+
+    <img src="imagenes/habitaciones3.jpeg" alt="foto cuarto" id="fotohabitacion">
+    <aside id="habitaciones3Aside"><h2>Cabaña Ecológica</h2>
+    <p>acogedora habitación matrimonial de 25 m². Perfecta para parejas, esta habitación cuenta con una amplia cama matrimonial, decoración moderna y un ambiente luminoso gracias a sus grandes ventanas. Relájate con nuestras comodidades adicionales como Wi-Fi gratuito, aire acondicionado, y un baño privado equipado con artículos de aseo gratuitos. Todo lo necesario para un descanso reparador y una experiencia placentera.</p>
+    
+    <button>Ordenar Limpieza</button>
+    <button id="reservarButton">RESERVAR</button>
+    
+</aside>
+<a href="index.html" class="ahabitaciones">Cerrar Sesion</a>
+    <script>
+        document.getElementById('reservarButton').addEventListener('click', function() {
+            window.location.href = 'habitaciones4.html';
+        });
+    </script>
+</body>
+</html>
