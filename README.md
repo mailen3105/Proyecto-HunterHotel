@@ -17,6 +17,19 @@
     <a href="https://drive.google.com/file/d/15xj2FjDywmswbFpxRoVZyIPoWcl5X0ki/view?usp=sharing"> Flujo de usuario </a><br>
     <a href="https://drive.google.com/file/d/11D0fyU9TzxVhxyxchConiMJ_wc7fa0wl/view?usp=sharing"> Wireframe Web </a><br>
     <a href="https://drive.google.com/file/d/1irfrNs-YBwbAmpctey_vTrOR2tyFfIi5/view?usp=sharing"> Entrevista + MVP + Benchmarking </a>
-    
+
 </body>
+<style>
+    body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+    h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: aqua;
+}
+</style>
 </html>
