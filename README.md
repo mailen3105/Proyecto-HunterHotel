@@ -8,7 +8,7 @@
     <meta name="author" content="Islas - Piccioni - Lignac">
     <meta name="publisher" content="Islas - Piccioni - Lignac">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/House hunter (Hotel)/estilo.css">
+    <link rel="stylesheet" href="/estilo.css">
 </head>
 <body>
    <h1>Proyecto House Hunter Hotel</h1>
