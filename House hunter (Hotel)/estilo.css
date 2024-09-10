@@ -24,7 +24,6 @@ body {
 
 #formularioIndex {
     width: 90%;
-    
     height: 80%;
     background-image: url(imagenes/fondoHome.jpeg);
     background-size: cover;
@@ -75,9 +74,12 @@ h1 {
     width:auto ;
     height: 100%;
     max-height: 200px; 
+    transition: border 0.3s ease;
 }
 
-
+#menuHome img:hover {
+    border: 25px solid red;
+}
 .aHome {
     display: block;
     text-align: center;
@@ -87,30 +89,24 @@ h1 {
     color: black;
 }
 
-
+.otros {
+    margin-bottom: 15%;
+}
 footer {
     background-color: #FFEAB3;
     position: fixed;
     bottom: 0;
     left: 0;
-    height: auto;
+    height: 5%;
     width: 100%;
 }
 #cerrarSesion{
-margin-top: 10%;
-padding: 2%;
 display: block;
 text-align: center;
 background-color: #FFEAB3;
 font-weight: bold;
 text-decoration: none;
 color: black;
-
-
-}
-
-a:hover {
-    color: gray;
 }
 
 .menu{
