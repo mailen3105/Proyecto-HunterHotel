@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Asegúrate de que el calendario se muestre correctamente */
+        .flatpickr-calendar {
+            display: block !important;
+        }
+    </style>
 </head>
 <body>
     <div class="otros">   
@@ -40,7 +46,7 @@
             dateFormat: "d-m-y",
             minDate: "today",
             locale: "es",
-            static: true
+            inline: true // Cambia 'static: true' a 'inline: true'
         });
 
         document.getElementById('formhabitaciones').addEventListener('submit', function(event) {
