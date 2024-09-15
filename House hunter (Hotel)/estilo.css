@@ -97,8 +97,8 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 5%;
     width: 100%;
+    padding: 1%;
 }
 #cerrarSesion{
 display: block;
@@ -159,7 +159,7 @@ color: black;
     width: 100%;
 
 }
-#fotohabitacion{ 
+.fotohabitacion{ 
 
 display: flex;
 float: left;
@@ -168,7 +168,7 @@ height: auto;
 margin: 2%;
 }
 
-#habitaciones3Aside {
+.habitacionesAside {
     float: right;
     width: 45%;
     margin: 2%;
@@ -278,4 +278,9 @@ font-size: 20px;
 
 #comentario{
     text-align: center;
+}
+
+.cuartos{
+    margin-top: 10%;
+    margin-left: 10%;
 }
