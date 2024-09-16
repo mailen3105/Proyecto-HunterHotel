@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="otros">   
     <nav class="menu">
         <a href="home.html" class="menu">Home</a>
         <a href="habitaciones.html" class="menu">Habitaciones</a>
@@ -23,20 +23,49 @@
     </nav>
 
     <h1>HABITACIONES</h1>
+    <div class="cuartos">
+        <aside class="habitacionesAside"><img src="imagenes/habitacion matrimonial.jpg" alt="foto cuarto" class="fotohabitacion"></aside>
+        <h2>Habitación Matrimonial</h2>
+        <p>Acogedora habitación de 25 m². Perfecta para parejas, esta habitación cuenta con una amplia cama de dos plazas y media, decoración moderna y un ambiente luminoso gracias a sus grandes ventanas. Relájate con nuestras comodidades adicionales como Wi-Fi gratuito, aire acondicionado, y un baño privado equipado con artículos de aseo gratuitos. Todo lo necesario para un descanso reparador y una experiencia placentera.</p>
+        <button>Ordenar Limpieza</button>
+        <button class="reservarButton">Seleccionar</button>
+    </div>
 
-    <img src="imagenes/habitaciones3.jpeg" alt="foto cuarto" id="fotohabitacion">
-    <aside id="habitaciones3Aside"><h2>Cabaña Ecológica</h2>
-    <p>acogedora habitación matrimonial de 25 m². Perfecta para parejas, esta habitación cuenta con una amplia cama matrimonial, decoración moderna y un ambiente luminoso gracias a sus grandes ventanas. Relájate con nuestras comodidades adicionales como Wi-Fi gratuito, aire acondicionado, y un baño privado equipado con artículos de aseo gratuitos. Todo lo necesario para un descanso reparador y una experiencia placentera.</p>
-    
-    <button>Ordenar Limpieza</button>
-    <button id="reservarButton">RESERVAR</button>
-    
-</aside>
-<a href="index.html" class="ahabitaciones">Cerrar Sesion</a>
+    <div class="cuartos">
+        <aside class="habitacionesAside"><img src="imagenes/habitacion familiar.jpg" alt="foto cuarto familiar" class="fotohabitacion"></aside>
+        <h2>Habitación Familiar</h2>
+        <p>Acogedora habitación familiar de 35 m². Ideal para familias, esta habitación cuenta con dos ambientes: un dormitorio principal con una cama de dos plazas y un salón separado que incluye una cama individual que también puede usarse como sofá. La decoración moderna y las amplias ventanas ofrecen un ambiente luminoso y acogedor. Disfrutá de nuestras comodidades adicionales como Wi-Fi gratuito, aire acondicionado, y un baño privado con artículos de aseo gratuitos. Todo lo necesario para un descanso reparador y una estadía placentera en familia.</p>
+        <button>Ordenar Limpieza</button>
+        <button class="reservarButton">Seleccionar</button>
+    </div>
+
+    <div class="cuartos">
+        <aside class="habitacionesAside"><img src="imagenes/habitacion doble.jpg" alt="foto cuarto doble" class="fotohabitacion"></aside>
+        <h2>Habitación Doble</h2>
+        <p>Acogedora habitación doble de 25 m². Ideal para quienes buscan comodidad, esta habitación cuenta con dos camas individuales, decoración moderna y un ambiente luminoso gracias a sus grandes ventanas. Disfrutá de nuestras comodidades adicionales como Wi-Fi gratuito, aire acondicionado y un baño privado con artículos de aseo gratuitos. Todo lo necesario para un descanso reparador y una estadía placentera.</p>
+        <button>Ordenar Limpieza</button>
+        <button class="reservarButton">Seleccionar</button>
+    </div>
+
+    <div class="cuartos">
+        <aside class="habitacionesAside"><img src="imagenes/habitacion triple.jpg" alt="foto cuarto triple" class="fotohabitacion"></aside>
+        <h2>Habitación Triple</h2>
+        <p>Acogedora habitación triple de 35 m². Ideal para quienes buscan comodidad, esta habitación cuenta con tres camas individuales, decoración moderna y un ambiente luminoso gracias a sus grandes ventanas. Disfrutá de nuestras comodidades adicionales como Wi-Fi gratuito, aire acondicionado y un baño privado con artículos de aseo gratuitos. Todo lo necesario para un descanso reparador y una estadía placentera.</p>
+        <button>Ordenar Limpieza</button>
+        <button class="reservarButton">Seleccionar</button>
+    </div>
+
     <script>
-        document.getElementById('reservarButton').addEventListener('click', function() {
-            window.location.href = 'habitaciones4.html';
+        // Añade un event listener a todos los botones con la clase 'reservarButton'
+        document.querySelectorAll('.reservarButton').forEach(button => {
+            button.addEventListener('click', function() {
+                window.location.href = 'habitaciones4.html';
+            });
         });
     </script>
+    </div>
+    <footer>
+        <a href="index.html" id="cerrarSesion">Cerrar Sesión</a>
+    </footer>
 </body>
 </html>
