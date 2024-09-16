@@ -11,67 +11,101 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="estilos1.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    
-    <nav class="menu">
-        <a href="home.html" class="menu">Home</a>
-        <a href="habitaciones.html" class="menu">Habitaciones</a>
-        <a href="actividades.html" class="menu">Actividades</a>
-        <a href="checkin-out.html" class="menu">Check in/out</a>
-        <a href="registro.html" class="menu">Registro de usuarios</a>
-        <a href="contacto.html" class="menu">Contacto</a>
-    </nav>
+    <div class="otros"> 
+        <nav class="menu">
+            <a href="home.html" class="menu">Home</a>
+            <a href="habitaciones.html" class="menu">Habitaciones</a>
+            <a href="actividades.html" class="menu">Actividades</a>
+            <a href="checkin-out.html" class="menu">Check in/out</a>
+            <a href="registro.html" class="menu">Registro de usuarios</a>
+            <a href="contacto.html" class="menu">Contacto</a>
+        </nav>
 
-    <div class="grid-container">
-        <div class="grid-item">
-            <h2>Tu Reservación</h2>
-            <p>Total Parcial: </p>
-            <p>Impuestos: </p>
-            <p>Total: </p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>Tu Reservación</h2>
+                <p>Total Parcial: </p>
+                <p>Impuestos: </p>
+                <p>Total: </p>
+            </div>
+            <div class="grid-item">
+                <h2>Información del Huésped</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label> 
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label> 
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label> 
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label> 
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pais">País:</label> 
+                        <select id="pais" name="pais" required>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Perú">Perú</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Ecuador">Ecuador</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="grid-item">
+                <h2>Método de Pago</h2>
+                <form>
+                    <div class="form-group-inline">
+                        <label for="nombreTarjeta">Nombre en la Tarjeta:</label>
+                        <input type="text" id="nombreTarjeta" name="nombreTarjeta" required>
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="numeroTarjeta">Número de Tarjeta:</label>
+                        <input type="text" id="numeroTarjeta" name="numeroTarjeta" required>
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="mesVencimiento">Fecha de Vencimiento:</label>
+                        <input type="text" id="mesVencimiento" name="mesVencimiento" placeholder="MMAA" required>
+                    </div>
+                    <div class="form-group-inline">
+                        <label for="codigoSeguridad">Código de Seguridad:</label>
+                        <input type="text" id="codigoSeguridad" name="codigoSeguridad" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="notificaciones" name="notificaciones">
+                        <label for="notificaciones"> Notificarme sobre ofertas especiales </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="condiciones" name="condiciones" required>
+                        <label for="condiciones"> He leído y acepto los <a href="terminos.html" target="_blank">términos y condiciones</a> y la <a href="politica.html" target="_blank">Política de Privacidad</a></label>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="grid-item">
-            <h2>Información del Huésped</h2>
-            <form>
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" required><br>
-                <label for="apellido">Apellido:</label><br>
-                <input type="text" id="apellido" name="apellido" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="telefono">Teléfono:</label><br>
-                <input type="tel" id="telefono" name="telefono" required><br>
-                <label for="pais">País:</label><br>
-                <select id="pais" name="pais" required>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Brasil">Brasil</option>
-                    <option value="Chile">Chile</option>
-                    <option value="Uruguay">Uruguay</option>
-                </select><br><br>
-            </form>
-        </div>
-        <div class="grid-item">
-            <h2>Método de Pago</h2>
-            <form>
-                <label for="nombreTarjeta">Nombre en la Tarjeta:</label><br>
-                <input type="text" id="nombreTarjeta" name="nombreTarjeta" required><br>
-                <label for="numeroTarjeta">Número de Tarjeta:</label><br>
-                <input type="text" id="numeroTarjeta" name="numeroTarjeta" required><br>
-                <label for="mesVencimiento">Fecha de Vencimiento:</label><br>
-                <input type="number" id="mesVencimiento" name="mesVencimiento" placeholder="MMAA" required><br>
-                <label for="codigoSeguridad">Código de Seguridad:</label><br>
-                <input type="number" id="codigoSeguridad" name="codigoSeguridad" required><br><br>
-                <input type="checkbox" id="notificaciones" name="notificaciones">
-                <label for="notificaciones"> Notificarme sobre ofertas especiales </label><br>
-                <input type="checkbox" id="condiciones" name="condiciones" required>
-                <label for="condiciones"> He leido y acepto los terminos y condiciones y la Politica de Privacidad</label><br><br>
-            </form>
-        </div>
+
+        <button type="button" id="botonreserva" onclick="confirmarReserva()">Completar Reserva</button>
     </div>
+    <footer>
+        <a href="index.html" id="cerrarSesion">Cerrar Sesión</a>
+    </footer>
 
-    <button type="button" id="botonreserva">Completar Reserva</button>
-
-    <a href="index.html" class="aHome">Cerrar Sesion</a>
+    <script>
+        function confirmarReserva() {
+            alert("¡Reserva completada con éxito!");
+        }
+    </script>
 </body>
 </html>
