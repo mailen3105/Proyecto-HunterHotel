@@ -9,7 +9,6 @@
     <meta name="publisher" content="Islas - Piccioni - Lignac">
     <title>House hunter</title>
     <link rel="stylesheet" href="estilo.css">
-
 </head>
 <body>
  <div class="otros">      
@@ -22,29 +21,36 @@
         <a href="contacto.html" class="menu">Contacto</a>
     </nav>
     <h1>Actividades</h1>
-<section id="contenedorimg">
-    <div class="imagen-tooltip">
-        <img src="imagenes/salon.jpeg" alt="salon" title="Salón">
-        <span class="tooltip-text">Salón</span>
-    </div>
-    <div class="imagen-tooltip">
-        <img src="imagenes/cancha de paddle.jpeg" alt="cancha de paddle" title="Cancha de Paddle">
-        <span class="tooltip-text">Cancha de Paddle</span>
-    </div>
-    <div class="imagen-tooltip">
-        <img src="imagenes/cancha de futbol.jfif" alt="cancha de futbol" title="Cancha de Fútbol">
-        <span class="tooltip-text">Cancha de Fútbol</span>
-    </div>
-    <div class="imagen-tooltip">
-        <img src="imagenes/pileta.jpeg" alt="pileta" title="Pileta">
-        <span class="tooltip-text">Pileta</span>
-    </div>
-</section>
+    <section id="contenedorimg">
+        <div class="imagen-tooltip">
+            <img src="imagenes/salon.jpeg" alt="salon" title="Salón">
+            <span class="tooltip-text">Salón</span>
+        </div>
+        <div class="imagen-tooltip">
+            <img src="imagenes/cancha de paddle.jpeg" alt="cancha de paddle" title="Cancha de Paddle">
+            <span class="tooltip-text">Cancha de Paddle</span>
+        </div>
+        <div class="imagen-tooltip">
+            <img src="imagenes/cancha de futbol.jpg" alt="cancha de futbol" title="Cancha de Fútbol">
+            <span class="tooltip-text">Cancha de Fútbol</span>
+        </div>
+        <div class="imagen-tooltip">
+            <img src="imagenes/pileta.jpeg" alt="pileta" title="Pileta">
+            <span class="tooltip-text">Pileta</span>
+        </div>
+    </section>
     <button id="botonmantener">PEDIR MANTENIMIENTO</button>
     <button id="botonreservaract">RESERVA AQUI</button>
+    <button onclick="history.back()">Volver</button>
 </div>
-    <footer>
-        <a href="index.html"  id="cerrarSesion">Cerrar Sesion</a>
-    </footer>
+<footer>
+    <a href="index.html" id="cerrarSesion">Cerrar Sesion</a>
+</footer>
+
+<script>
+    document.getElementById("botonmantener").addEventListener("click", function() {
+        window.location.href = "pedirMantenimiento.html";
+    });
+</script>
 </body>
 </html>
