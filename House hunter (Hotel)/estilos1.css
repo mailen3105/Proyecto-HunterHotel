@@ -185,50 +185,50 @@ margin: 2%;
     /*FIN HABITACIONES */
     /*INICIO ACTIVIDADES*/
     
-
-    #contenedorimg {
+    #contenedorActividades {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap; 
         margin: 2%;
     }
     
-    .imagen-tooltip img {
-        width: auto; 
-        height: 200px; 
-        object-fit: cover; 
-        margin: 1%; 
-    }
-    
-    .imagen-tooltip {
+    .imgContenedor {
         position: relative;
         text-align: center;
     }
     
-    .tooltip-text {
-        visibility: hidden;
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.75);
-        color: #fff;
-        padding: 5px;
-        border-radius: 3px;
-        bottom: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        white-space: nowrap;
+    .imgContenedor img {
+        width: auto; 
+        height: 200px; 
+        object-fit: cover; 
+        margin: 1%; 
+        opacity: 1; 
+        transition: opacity 0.5s ease; 
     }
     
-    .imagen-tooltip:hover .tooltip-text {
-        visibility: visible;}
+    .imgContenedor:hover img {
+        opacity: 0.3; 
+    }
+    
+    .textoHover {
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        opacity: 0; 
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(0, 0, 0); 
+        transition: opacity 0.5s ease; 
+    }
+    
+    .imgContenedor:hover .textoHover {
+        opacity: 1; 
+    }
 
-    #botonreservaract, #botonmantener{
-        background-color: #C82725;
-        color: white;
-        width: 30%;
-        height: 20%;
-        margin-left: 30%;
-        margin-top: 2%;
-        
+    .botonesAct{
+       margin-left: 45%;
+       margin-top: 2%;
     }
 
     /*FIN ACTIVIDADES*/
