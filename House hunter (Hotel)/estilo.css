@@ -52,6 +52,10 @@ button{
     background: #568F3D;
     background: linear-gradient(to top, #568F3D, #71BD50);
 }
+a{
+    text-decoration: none;
+    color: #000000;
+}
 
 
 
