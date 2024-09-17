@@ -254,3 +254,15 @@ margin: 2%;
     }
 
      /*FIN CONTACTO*/
+
+     /*INICIO TERMINOS Y CONDICIONES + POLITICA DE PRIVACIDAD*/
+
+     .h2terminos {
+        margin-left: 33%;
+     }
+
+     .terminosYpolitica{
+        margin-left: 5%;
+        margin-right: 5%;
+
+     }
