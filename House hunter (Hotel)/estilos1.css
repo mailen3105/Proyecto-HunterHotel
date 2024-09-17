@@ -250,9 +250,21 @@ margin: 2%;
     /*FIN CHECKIN-CHECKOUT*/
     /*INICIO CONTACTO*/
     #comentario{
-        text-align: center;
+        text-align:left;
+        margin-left: 40%;
+    }
+    .formContacto{
+        margin: 2%;
     }
 
+    #pContacto{
+        text-align: center;
+        padding: 1%;
+    }
+    #botonContacto{
+        margin-left: 13%;
+        margin-top: 2%;
+    }
      /*FIN CONTACTO*/
 
      /*INICIO TERMINOS Y CONDICIONES + POLITICA DE PRIVACIDAD*/
