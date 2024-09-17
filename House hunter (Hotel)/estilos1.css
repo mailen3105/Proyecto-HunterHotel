@@ -263,11 +263,14 @@ margin: 2%;
         
         }
         
-        .botonesregistro { 
-            width: 30%;
-            height: 20%;
-            margin: 2%;
-        }
+        .botonesregistro {
+            width: 25%;
+            height: 30%;
+            margin: 5% 40% 0px;
+            text-align: center;
+          }
+          
+
 
         .formParteRegistro{
             margin: 1%;
