@@ -293,6 +293,10 @@ margin: 2%;
 
      }
 
+     /*FIN TERMINOS Y CONDICIONES + POLITICA DE PRIVACIDAD*/
+
+     /*INICIO RESERVA ACTIVIDADES*/
+
      #reservaAct{
         margin-left: 40%;
         background-color: #f9f9f9; 
@@ -301,3 +305,4 @@ margin: 2%;
         border-radius: 10px; 
         width: fit-content;
      }
+     /*FIN RESERVA ACTIVIDADES*/
