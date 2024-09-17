@@ -234,20 +234,34 @@ margin: 2%;
     /*FIN ACTIVIDADES*/
 
     /*INICIO CHECKIN-CHECKOUT*/
-    #checkForm, #formRegistro,#formcontacto{
-        display: block;
-        text-align: center;
-        font-size: 20px;
+    .contenedorCheck {
+        display: flex;
+        justify-content: center; 
+        gap: 2%; 
+        margin: 5%; 
+    }
+    
+    .mitad1, .mitad2 {
+        width: 45%;
+        background-color: #f9f9f9; 
+        padding: 20px;
+        box-shadow: 0 4px 8px rgb(30, 224, 0); 
+        border-radius: 10px; 
+    }
+    /*FIN CHECKIN-CHECKOUT*/
+        /*INICIO REGISTRO*/
+        #formRegistro {
+            display: block;
+            text-align: center;
+            font-size: 20px;
         }
         
-        
-        #botoncheckin, .botonesregistro, .botonContacto{
-            
+        .botonesregistro { 
             width: 30%;
             height: 20%;
             margin: 2%;
         }
-    /*FIN CHECKIN-CHECKOUT*/
+        /*FIN REGISTRO*/
     /*INICIO CONTACTO*/
     #comentario{
         text-align:left;
