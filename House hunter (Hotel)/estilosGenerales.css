@@ -1,0 +1,87 @@
+/* Reset y fuente global */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Estilos generales para contenedores y elementos comunes */
+
+
+.contenedor {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #FFEAB3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1%;
+}
+
+.menu {
+    font-weight: bold;
+    background-color: #FFEAB3;
+    width: 100%;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    box-sizing: border-box;
+}
+
+#cerrarSesion, .aHome, .ahabitaciones {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#formhabitaciones, #formRegistro, #formcontacto {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#formhabitaciones label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#formhabitaciones select, #formhabitaciones input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button, #botonh2, #botonreservaract, #botonmantener, #botoncheckin, .botonesregistro {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFEAB3;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
