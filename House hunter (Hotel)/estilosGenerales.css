@@ -24,18 +24,11 @@ h1 {
     margin-top: 20px;
 }
 
-footer {
-    background-color: #FFEAB3;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 1%;
-}
+
 
 .menu {
     font-weight: bold;
-    background-color: #FFEAB3;
+    background-color: #d50000;
     width: 100%;
     height: auto;
     font-family: 'Montserrat', sans-serif;
@@ -43,7 +36,7 @@ footer {
     text-decoration: none;
     text-align: center;
     padding: 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     box-sizing: border-box;
 }
 
@@ -52,7 +45,7 @@ footer {
     text-align: center;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 #formhabitaciones, #formRegistro, #formcontacto {
@@ -81,7 +74,21 @@ button, #botonh2, #botonreservaract, #botonmantener, #botoncheckin, .botonesregi
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #FFEAB3;
+    background-color: #d50000;
     cursor: pointer;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+/* Estilos para el icono de cerrar sesión */
+#cerrarSesion {
+    background-color: #d50000;
+    border-radius: 20%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;  /* Tamaño de la imagen */
+    height: auto;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
