@@ -15,12 +15,18 @@
 </head>
 <body>
     <nav class="menu">
-        <a href="home.html" class="menu">Home</a>
-        <a href="habitaciones.html" class="menu">Habitaciones</a>
-        <a href="actividades.html" class="menu">Actividades</a>
-        <a href="checkin-out.html" class="menu">Check in/out</a>
-        <a href="registro.html" class="menu">Registro de usuarios</a>
-        <a href="contacto.html" class="menu">Contacto</a>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <!-- Ícono de menú hamburguesa -->
+            &#9776;
+        </div>
+        <div class="menu-links">
+            <a href="home.html" class="menu-item">Home</a>
+            <a href="habitaciones.html" class="menu-item">Habitaciones</a>
+            <a href="actividades.html" class="menu-item">Actividades</a>
+            <a href="checkin-out.html" class="menu-item">Check in/out</a>
+            <a href="registro.html" class="menu-item">Registro de usuarios</a>
+            <a href="contacto.html" class="menu-item">Contacto</a>
+        </div>
     </nav>
     
         <h1>Contacto</h1>
@@ -58,10 +64,15 @@
         </form>
         
     
-    <footer>
-        <a href="index.html"  id="cerrarSesion">Cerrar Sesion</a>
-    </footer>
+        <footer>
+            <img src="imagenes/cerrar sesion.png" alt="Cerrar Sesión" id="cerrarSesion" onclick="cerrarSesion()" style="cursor: pointer;">
+        </footer>
     <script >
+
+function toggleMenu() {
+            document.querySelector('.menu-links').classList.toggle('show');
+        }
+
         document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
 

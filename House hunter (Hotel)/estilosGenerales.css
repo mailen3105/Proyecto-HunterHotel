@@ -26,18 +26,52 @@ h1 {
 
 
 
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 .menu {
-    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 15px;
+    color: white;
     background-color: #d50000;
-    width: 100%;
-    height: auto;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+}
+
+.menu-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #d50000;
+    padding-top: 60px;
+    display: none; 
+    flex-direction: column;
+}
+
+.menu-item {
+    color: white;
+    padding: 15px 20px;
     text-decoration: none;
-    text-align: center;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-    box-sizing: border-box;
+    display: block;
+}
+
+.menu-item:hover {
+    background-color: #444;
+}
+
+/* Mostrar el menú cuando esté activo */
+.menu-links.show {
+    display: flex;
 }
 
 #cerrarSesion, .aHome, .ahabitaciones {
@@ -80,15 +114,15 @@ button, #botonh2, #botonreservaract, #botonmantener, #botoncheckin, .botonesregi
 }
 
 
-/* Estilos para el icono de cerrar sesión */
 #cerrarSesion {
     background-color: #d50000;
     border-radius: 20%;
     position: fixed;
     bottom: 10px;
     right: 10px;
-    width: 30px;  /* Tamaño de la imagen */
+    width: 30px;  
     height: auto;
     cursor: pointer;
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    z-index: 1000; 
+    padding: 0.5%;
 }

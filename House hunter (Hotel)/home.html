@@ -15,52 +15,55 @@
 <body>
 <div class="otros">
     <nav class="menu">
-        <a href="home.html" class="menu">Home</a>
-        <a href="habitaciones.html" class="menu">Habitaciones</a>
-        <a href="actividades.html" class="menu">Actividades</a>
-        <a href="checkin-out.html" class="menu">Check in/out</a>
-        <a href="registro.html" class="menu">Registro de usuarios</a>
-        <a href="contacto.html" class="menu">Contacto</a>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <!-- Ícono de menú hamburguesa -->
+            &#9776;
+        </div>
+        <div class="menu-links">
+            <a href="home.html" class="menu-item">Home</a>
+            <a href="habitaciones.html" class="menu-item">Habitaciones</a>
+            <a href="actividades.html" class="menu-item">Actividades</a>
+            <a href="checkin-out.html" class="menu-item">Check in/out</a>
+            <a href="registro.html" class="menu-item">Registro de usuarios</a>
+            <a href="contacto.html" class="menu-item">Contacto</a>
+        </div>
     </nav>
     <h1>House Hunter</h1>
-    <button class="nav left" onclick="prevSlide()">Anterior</button>
     <div class="slider">
         <div class="slides">
             <div class="slide"><img src="imagenes/fondoHome.jpeg" alt="Foto 1"></div>
-            <div class="slide"><img src="imagenes/cancha de futbol.jpg" alt="Foto 1"></div>
-            <div class="slide"><img src="imagenes/cancha de paddle.jpeg" alt="Foto 1"></div>
-            <div class="slide"><img src="imagenes/pileta.jpeg" alt="Foto 1"></div>
-            <div class="slide"><img src="imagenes/salon.jpg" alt="Foto 1"></div>
-            <div class="slide"><img src="imagenes/checkin-out.jpeg" alt="Foto 1"></div>
-            <div class="slide"><img src="imagenes/habitaciones.jpeg" alt="Foto 1"></div>
-            <div class="slide"><img src="imagenes/habitacion doble.jpg" alt="Foto 1"></div>
-            <div class="slide"><img src="imagenes/habitacion familiar.jpg" alt="Foto 1"></div>
-            <div class="slide"><img src="imagenes/habitacion matrimonial.jpg" alt="Foto 1"></div>
-            <div class="slide"><img src="imagenes/habitacion triple.jpg" alt="Foto 1"></div>
-
+            <div class="slide"><img src="imagenes/cancha de futbol.jpg" alt="Foto 2"></div>
+            <div class="slide"><img src="imagenes/cancha de paddle.jpeg" alt="Foto 3"></div>
+            <div class="slide"><img src="imagenes/pileta.jpeg" alt="Foto 4"></div>
+            <div class="slide"><img src="imagenes/salon.jpg" alt="Foto 5"></div>
+            <div class="slide"><img src="imagenes/checkin-out.jpeg" alt="Foto 6"></div>
+            <div class="slide"><img src="imagenes/habitaciones.jpeg" alt="Foto 7"></div>
+            <div class="slide"><img src="imagenes/habitacion doble.jpg" alt="Foto 8"></div>
+            <div class="slide"><img src="imagenes/habitacion familiar.jpg" alt="Foto 9"></div>
+            <div class="slide"><img src="imagenes/habitacion matrimonial.jpg" alt="Foto 10"></div>
+            <div class="slide"><img src="imagenes/habitacion triple.jpg" alt="Foto 11"></div>
         </div>
     </div>
-    <button class="nav right" onclick="nextSlide()">Siguiente</button>
     <script>
+        function toggleMenu() {
+            document.querySelector('.menu-links').classList.toggle('show');
+        }
+
         let currentSlide = 0;
         const slides = document.querySelector('.slides');
         const totalSlides = document.querySelectorAll('.slide').length;
-        
+
         function updateSlide() {
             slides.style.transform = `translateX(-${currentSlide * 100}%)`;
         }
+
         function nextSlide() {
             currentSlide = (currentSlide + 1) % totalSlides;
             updateSlide();
         }
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            updateSlide();
-        }
 
-        function cerrarSesion() {
-            window.location.href = "index.html";
-        }
+        // Cambia de diapositiva cada 3 segundos (3000 ms)
+        setInterval(nextSlide, 3000);
     </script>
     <footer>
         <img src="imagenes/cerrar sesion.png" alt="Cerrar Sesión" id="cerrarSesion" onclick="cerrarSesion()" style="cursor: pointer;">
