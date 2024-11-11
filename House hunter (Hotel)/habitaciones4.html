@@ -32,12 +32,6 @@
 
         <div class="grid-container">
             <div class="grid-item">
-                <h2>Tu Reservación</h2>
-                <p>Total Parcial: </p>
-                <p>Impuestos: </p>
-                <p>Total: </p>
-            </div>
-            <div class="grid-item">
                 <h2>Información del Huésped</h2>
                 <form>
                     <div class="form-group">
@@ -101,17 +95,23 @@
                     </div>
                 </form>
             </div>
+            <div class="grid-item">
+                <h2>Tu Reservación</h2>
+                <p>Total Parcial: </p>
+                <p>Impuestos: </p>
+                <p>Total: </p>
+            </div>
         </div>
 
         <button type="button" id="botonreserva" onclick="confirmarReserva()">Completar Reserva</button>
-        <button><a href="habitaciones3.html">Volver</a></button> 
+        <button><a class="volver" href="habitaciones3.html">Volver</a></button> 
     </div>
     <footer>
         <img src="imagenes/cerrar sesion.png" alt="Cerrar Sesión" id="cerrarSesion" onclick="cerrarSesion()" style="cursor: pointer;">
     </footer>
 
     <script>
- function toggleMenu() {
+        function toggleMenu() {
             document.querySelector('.menu-links').classList.toggle('show');
         }
 

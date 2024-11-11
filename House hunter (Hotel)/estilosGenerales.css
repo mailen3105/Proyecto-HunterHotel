@@ -1,13 +1,10 @@
-/* Reset y fuente global */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;
+    font-family: Arial, sans-serif;
 }
-
-/* Estilos generales para contenedores y elementos comunes */
-
 
 .contenedor {
     text-align: center;
@@ -22,14 +19,6 @@ body {
 h1 {
     text-align: center;
     margin-top: 20px;
-}
-
-
-
-/* Estilos generales */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
 }
 
 .menu {
@@ -111,9 +100,14 @@ button, #botonh2, #botonreservaract, #botonmantener, #botoncheckin, .botonesregi
     background-color: #d50000;
     cursor: pointer;
     color: rgb(255, 255, 255);
+    
 }
 
-
+.volver{
+    text-decoration: none;
+    color: white;
+    
+}
 #cerrarSesion {
     background-color: #d50000;
     border-radius: 20%;
