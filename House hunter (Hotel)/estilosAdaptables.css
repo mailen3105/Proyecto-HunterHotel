@@ -36,7 +36,7 @@
     background-color: #FFEAB3;
 }
 
-/* Estilos para el menú en página de inicio */
+/* Estilos para la página de inicio */
 .slider {
     width: 50%;
     margin: auto;
@@ -73,56 +73,122 @@
     margin: 2%;
 }
 
-/* Grid y disposición de las habitaciones */
+/* habitaciones3 */
+.cuartos{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.fotohabitacion{
+    width: 40%;
+
+}
+
+/* Grid y disposición de habitaciones4 */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 20px;
+    grid-template-columns: 1fr;
+    gap: 2%;
+    margin-top: 3%;
+    max-width:max-content;
+    margin-left: 30%;
 }
 
 .grid-item {
     padding: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
 }
 
-#contenedorimg {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+/* check in-out */
+
+.contenedorCheck{
+    margin: 5% 20%;
+}
+.mitad1, .mitad2{
+    border: 1px solid #000000;
+    margin: 1%;
+    padding: 2%;
+}
+
+/* Sección de actividades */
+#contenedorActividades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    margin: 20px;
-    margin-top: 5%;
+    margin-left: 15%;
+    max-width: 80%;
+    padding: 20px;
 }
 
-.imagen-tooltip {
+.imgContenedor {
     position: relative;
-    display: inline-block;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 }
 
-.imagen-tooltip img {
-    height: 300px;
+.imgContenedor img {
+    width: 100%;
+    height: auto;
     display: block;
+    border-radius: 8px;
 }
 
-.imagen-tooltip .tooltip-text {
-    visibility: hidden;
-    width: 120px;
-    background-color: #C82725;
+.imgContenedor:hover {
+    transform: scale(1.05);
+}
+
+.textoHover {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 0 0 8px 8px;
+}
+/* Contenedor de botones alineado a la derecha */
+.botonContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 15%;
+    margin-top: 20px;
 }
 
-.imagen-tooltip:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
+.botonesAct {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.botonesAct a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .menu-links {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    #contenedorActividades {
+        grid-template-columns: 1fr;
+    }
+    .botonesAct {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.show {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
 }
