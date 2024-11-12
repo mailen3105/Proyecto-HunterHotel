@@ -108,6 +108,24 @@ button, #botonh2, #botonreservaract, #botonmantener, #botoncheckin, .botonesregi
     color: white;
     
 }
+
+footer{
+    background-color: #d50000;
+    padding-left: 15%;
+}
+#contacto{
+    margin-top: 5%;
+    padding: 2%;
+    color: white;
+}
+.formContacto {
+    margin: 1%;
+}
+
+#botonContacto{
+    border: 1px solid #000000;
+    cursor: pointer;
+}
 #cerrarSesion {
     background-color: #d50000;
     border-radius: 20%;
@@ -119,4 +137,5 @@ button, #botonh2, #botonreservaract, #botonmantener, #botoncheckin, .botonesregi
     cursor: pointer;
     z-index: 1000; 
     padding: 0.5%;
+    border: 1px solid #000000;
 }
