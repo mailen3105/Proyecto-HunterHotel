@@ -32,8 +32,8 @@
     width: 40%;
     height: 10%;
     cursor: pointer;
-    color: black;
-    background-color: #FFEAB3;
+    color: rgb(254, 254, 254);
+    background-color: #d50000;
 }
 
 /* Estilos para la página de inicio */
