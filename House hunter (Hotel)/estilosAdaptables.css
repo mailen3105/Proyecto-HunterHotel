@@ -36,7 +36,7 @@
     background-color: #d50000;
 }
 
-/* Estilos para la página de inicio */
+/* Estilos para el home */
 .slider {
     width: 50%;
     margin: auto;
@@ -55,24 +55,13 @@
     width: 100%;
     display: block;
 }
-.nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer; 
-}
-.left {
-    left: 0;
 
+.Clima{
+    margin-left: 15%;
 }
-.right {
-    right: 0;
+#botonclima{
+    margin-top: 1%;
 }
-
-.otros button{
-    margin: 2%;
-}
-
 /* habitaciones3 */
 .cuartos{
     margin-left: 20%;

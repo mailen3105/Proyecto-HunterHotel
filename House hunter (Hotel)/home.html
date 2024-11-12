@@ -42,6 +42,13 @@
             <div class="slide"><img src="imagenes/habitacion triple.jpg" alt="Foto 11"></div>
         </div>
     </div>
+    <div class="Clima">
+        <h2>Clima Actual</h2>
+        <input type="text" id="cityInput" placeholder="Ingrese una ciudad">
+        <br>
+        <button onclick="getWeather()" id="botonclima">Buscar</button>
+        <div id="weather-display"></div>
+    </div>
     <script>
         
         function toggleMenu() {
@@ -63,6 +70,36 @@
 
         // Cambia de diapositiva cada 3 segundos (3000 ms)
         setInterval(nextSlide, 3000);
+
+
+        const apiKey = 'e622316752693159489d22d005012b5d'; 
+    
+    function getWeather() {
+        const city = document.getElementById('cityInput').value;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;   
+
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                displayWeather(data);
+            })
+            .catch(error => {
+                console.error('Error:',   
+ error);
+                alert('No se pudo encontrar la ciudad. Por favor, inténtalo de nuevo.');
+            });
+    }
+
+    function displayWeather(data) {
+        const weatherDisplay = document.getElementById('weather-display');
+        weatherDisplay.innerHTML = `
+            <h2>${data.name}</h2>
+            <p>Temperatura: ${Math.round(data.main.temp - 273.15)}°C</p>
+            <p>Descripción: ${data.weather[0].description}</p>
+        `;
+    }
+
     </script>
 <footer>
     <img src="imagenes/cerrar sesion.png" alt="Cerrar Sesión" id="cerrarSesion" onclick="cerrarSesion()" style="cursor: pointer;">
