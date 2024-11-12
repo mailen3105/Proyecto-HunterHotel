@@ -8,15 +8,15 @@
     <meta name="author" content="Islas - Piccioni - Lignac">
     <meta name="publisher" content="Islas - Piccioni - Lignac">
     <title>House hunter</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="estilos1.css">
-
+    <link rel="stylesheet" href="estilosGenerales.css">
+    <link rel="stylesheet" href="estilosAdaptables.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagenes/favicon.png" alt="favicon H">
 </head>
 <body>
     <div class="otros">      
         <nav class="menu">
             <div class="menu-icon" onclick="toggleMenu()">
-                <!-- Ícono de menú hamburguesa -->
                 &#9776;
             </div>
             <div class="menu-links">
@@ -25,49 +25,51 @@
                 <a href="actividades.html" class="menu-item">Actividades</a>
                 <a href="checkin-out.html" class="menu-item">Check in/out</a>
                 <a href="registro.html" class="menu-item">Registro de usuarios</a>
-                <a href="contacto.html" class="menu-item">Contacto</a>
             </div>
-        </nav>ref="contacto.html" class="menu">Contacto</a>
         </nav>
-    <div class="container">
         <h1>Pedir Mantenimiento</h1>
+    <div class="container">
+        
         <form id="maintenanceForm">
-            <label for="role">¿Sos cliente o empleado?</label>
-            <select id="role" name="role" onchange="toggleEmployeeFields()">
-                <option value="">Seleccioná una opción</option>
-                <option value="cliente">Cliente</option>
-                <option value="empleado">Empleado</option>
-            </select>
+            <div class="mantenimientoForm">
+                <label for="role">¿Sos cliente o empleado?</label>
+                <select id="role" name="role" onchange="toggleEmployeeFields()">
+                    <option value="">Seleccioná una opción</option>
+                    <option value="cliente">Cliente</option>
+                    <option value="empleado">Empleado</option>
+                </select>
+            </div> <br>
 
             <div id="employeeSection" style="display:none;">
                 <label for="employeeNumber">Número de Legajo</label>
                 <input type="text" id="employeeNumber" name="employeeNumber" placeholder="Ingresá tu número de legajo">
-            </div>
-
-            <label for="activity">Actividad</label>
-            <select id="activity" name="activity">
-                <option value="reparación">Salón</option>
-                <option value="mantenimiento">Cancha de Paddle</option>
-                <option value="mantenimiento">Cancha de Futbol</option>
-                <option value="limpieza">Pileta</option>
-            </select>
-
-            <label for="reason">Razón</label>
-            <select id="reason" name="reason" onchange="toggleOtherReason()">
-                <option value="falla">Falla</option>
-                <option value="rotura">Rotura</option>
-                <option value="rotura">Orden</option>
-                <option value="rotura">Limpieza</option>
-                <option value="otros">Otros</option>
-            </select>
-
+            </div> <br>
+            <div class="mantenimientoForm">
+                <label for="activity">Actividad</label>
+                <select id="activity" name="activity">
+                    <option value="reparación">Salón</option>
+                    <option value="mantenimiento">Cancha de Paddle</option>
+                    <option value="mantenimiento">Cancha de Futbol</option>
+                    <option value="limpieza">Pileta</option>
+                </select>
+            </div> <br>
+            <div class="mantenimientoForm">
+                <label for="reason">Razón</label>
+                <select id="reason" name="reason" onchange="toggleOtherReason()">
+                    <option value="falla">Falla</option>
+                    <option value="rotura">Rotura</option>
+                    <option value="rotura">Orden</option>
+                    <option value="rotura">Limpieza</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div> <br>
             <div id="otherReasonSection" style="display:none;">
                 <label for="otherReason">Especificá la razón</label>
                 <input type="text" id="otherReason" name="otherReason" placeholder="Ingresá la razón">
-            </div>
+            </div> <br>
 
-            <button type="submit">Enviar Solicitud</button>
-            <button onclick="location.href='actividades.html'">Volver</button>
+            <button type="submit">Enviar Solicitud</button><br>
+            <button><a class="volver" href="actividades.html">Volver</a></button> 
         </form>
     </div>
 
@@ -103,6 +105,45 @@ function toggleOtherReason() {
 
 <footer>
     <img src="imagenes/cerrar sesion.png" alt="Cerrar Sesión" id="cerrarSesion" onclick="cerrarSesion()" style="cursor: pointer;">
+<div id="contacto">
+    <p id="pContacto">¡Nos encantaría saber de vos! Completa el formulario y nos pondremos en contacto pronto.</p>
+    <form id="comentario">
+        <div class="formContacto">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required><br>
+        </div>
+
+        <div class="formContacto">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+        </div>
+
+        <div class="formContacto">
+            <label for="phone">Número de Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+        </div>
+
+        <div class="formContacto">
+            <label for="country">País:</label>
+            <select id="country" name="country" required>
+                <option value="">Seleccionar país</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Bolivia">Bolivia</option>
+            </select><br>
+        </div>
+
+        <div class="formContacto">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="10" cols="40" required></textarea><br>
+        </div>
+
+        <button type="submit" id="botonContacto">Enviar</button>
+    </form>
+</div>
 </footer>
 </body>
 </html>

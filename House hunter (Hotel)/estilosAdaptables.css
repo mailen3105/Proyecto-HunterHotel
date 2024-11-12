@@ -210,3 +210,17 @@
 .botonesregistro{
     margin: 2%;
 }
+
+/* reservar actividades y pedir mantenimiento */
+
+.container, #reservaAct{
+    margin-left: 37%;
+    border: 1px solid #000000;
+    padding: 2%;
+    width: max-content;
+}
+
+#reservaAct{
+    margin-left: 38%;
+    
+}
